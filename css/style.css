@@ -1,0 +1,220 @@
+@import url(https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SUIT Variable', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    z-index: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.rel {
+    position: relative;
+    max-width: 1560px;
+    margin: auto;
+    height: 100%;
+}
+
+.hero {
+    background: url(../img/hero-bg.png) no-repeat center/cover;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+header .rel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+}
+
+nav,
+.nav_list {
+    display: flex;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.nav_list li+li {
+    margin-left: 46px;
+}
+
+.nav_list a {
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 10px;
+}
+
+.nav_list a::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    bottom: -5px;
+    left: 0;
+}
+.nav_list a:hover::before {
+    width: 100%;
+}
+.nav_btn {
+    display: block;
+    width: 35px;
+    height: 21px;
+    position: relative;
+    margin-left: 100px;
+
+}
+.nav_btn span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    font-size: 0;
+    position: absolute;
+    background-color: #9b9b9b;
+}
+.nav_btn span:nth-child(1){
+    top: 0;
+}
+.nav_btn span:nth-child(2){
+    top: calc(50% - .5px);
+}
+.nav_btn span:nth-child(3){
+    top: calc(100% - 1px);
+}
+.hero .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tit_wrap h2{
+    font-size: 100px;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+.tit_wrap p{
+    font-weight: 200;
+    color: #939393;
+    font-size: 30px;
+    letter-spacing: -1%;
+    margin: 30px 0;
+    /* line-height: 37px; */
+}
+.hero_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: 1px solid #000;
+    font-size: 25px;
+    font-weight: 200;
+    color: #000;
+    letter-spacing: -1%;
+    text-transform: capitalize;
+}
+.hero .img_wrap {
+    position: relative;
+    width: 916px;
+    transform: translateX(90px);
+    /* height:570px; */
+}
+.card-arr {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: calc(50% - 20px);
+    font-size: 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    background-size:18px;
+    background-repeat: no-repeat;
+}
+.card-arr.left {
+    left: -60px;
+    background-image: url(../img/card-arr-left.png);
+}
+.card-arr.right {
+    right: -60px;
+    background-image: url(../img/card-arr-right.png);
+}
+.card_wrap{
+    display: flex;
+    gap: 38px;
+}
+.card{
+    width: 280px;
+    height: 430px;
+}
+.card a{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 43px 62px 26px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 -5px 17px rgba(0, 0, 0, 0.25);
+}
+.card1 a{
+    background-image: url(../img/card-bg-1.png);
+}
+.card2 {
+    margin-top: -60px;
+}
+.card2 a{
+    background-image: url(../img/card-bg-2.png);
+}
+.card3 a{
+    background-image: url(../img/card-bg-3.png);
+}
+.card-t-wrap .txt1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.card-t-wrap h4 {
+    margin: 7px 0 14px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+.arr_wrap{
+    text-align: right;
+}
