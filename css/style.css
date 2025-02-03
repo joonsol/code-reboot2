@@ -6,7 +6,12 @@
     box-sizing: border-box;
     font-family: 'SUIT Variable', sans-serif;
 }
-body{
+
+html {
+    font-size: 62.5%;
+}
+
+body {
     overflow-x: hidden;
 }
 
@@ -26,7 +31,7 @@ section {
 
 .rel {
     position: relative;
-    max-width: 1560px;
+    max-width: 156rem;
     margin: auto;
     height: 100%;
 }
@@ -55,13 +60,13 @@ nav,
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 3rem;
     text-transform: capitalize;
     font-weight: 800;
 }
 
 .nav_list li+li {
-    margin-left: 46px;
+    margin-left: 4.6rem;
 }
 
 .nav_list a {
@@ -69,7 +74,7 @@ header h1 {
     display: block;
     text-transform: uppercase;
     position: relative;
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 
 .nav_list a::before {
@@ -77,144 +82,167 @@ header h1 {
     content: "";
     position: absolute;
     width: 0%;
-    height: 2px;
+    height: .2rem;
     background-color: #000;
-    bottom: -5px;
+    bottom: -.5rem;
     left: 0;
 }
+
 .nav_list a:hover::before {
     width: 100%;
 }
+
 .nav_btn {
     display: block;
-    width: 35px;
-    height: 21px;
+    width: 3.5rem;
+    height: 2.1rem;
     position: relative;
-    margin-left: 100px;
+    margin-left: 10rem;
 
 }
-.nav_btn span{
+
+.nav_btn span {
     display: block;
     width: 100%;
-    height: 1px;
+    height: .1rem;
     font-size: 0;
     position: absolute;
     background-color: #9b9b9b;
 }
-.nav_btn span:nth-child(1){
+
+.nav_btn span:nth-child(1) {
     top: 0;
 }
-.nav_btn span:nth-child(2){
-    top: calc(50% - .5px);
+
+.nav_btn span:nth-child(2) {
+    top: calc(50% - .05rem);
 }
-.nav_btn span:nth-child(3){
-    top: calc(100% - 1px);
+
+.nav_btn span:nth-child(3) {
+    top: calc(100% - .1rem);
 }
+
 .hero .rel {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.tit_wrap h2{
-    font-size: 100px;
+
+.tit_wrap h2 {
+    font-size: 10rem;
     text-transform: capitalize;
-    letter-spacing: -1px;
+    letter-spacing: -.01rem;
     font-weight: 900;
 }
 
-.tit_wrap p{
+.tit_wrap p {
     font-weight: 200;
     color: #939393;
-    font-size: 30px;
+    font-size: 3rem;
     letter-spacing: -1%;
-    margin: 30px 0;
+    margin: 3rem 0;
     /* line-height: 37px; */
 }
-.hero_btn{
+
+.hero_btn {
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 60px;
+    padding: 1rem 2rem;
+    border-radius: 6rem;
     border: 1px solid #000;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 200;
     color: #000;
     letter-spacing: -1%;
     text-transform: capitalize;
 }
+
 .hero .img_wrap {
     position: relative;
-    width: 916px;
-    transform: translateX(90px);
+    width: 91.6rem;
+    transform: translateX(9rem);
     /* height:570px; */
 }
+
 .card-arr {
     position: absolute;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.7);
-    top: calc(50% - 20px);
+    top: calc(50% - 2rem);
     font-size: 0;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.25);
     background-position: center;
-    background-size:18px;
+    background-size: 1.8rem;
     background-repeat: no-repeat;
 }
+
 .card-arr.left {
-    left: -60px;
+    left: -6rem;
     background-image: url(../img/card-arr-left.png);
 }
+
 .card-arr.right {
-    right: -60px;
+    right: -6rem;
     background-image: url(../img/card-arr-right.png);
 }
-.card_wrap{
+
+.card_wrap {
     display: flex;
-    gap: 38px;
+    gap: 3.8rem;
 }
-.card{
-    width: 280px;
-    height: 430px;
+
+.card {
+    width: 28rem;
+    height: 43rem;
 }
-.card a{
+
+.card a {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 30px;
+    border-radius: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 43px 62px 26px;
+    padding: 0 4.3rem 6.2rem 2.6rem;
     color: #fff;
     width: 100%;
     height: 100%;
-    box-shadow: 0 -5px 17px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 -.05rem 1.7rem rgba(0, 0, 0, 0.25);
 }
-.card1 a{
+
+.card1 a {
     background-image: url(../img/card-bg-1.png);
 }
+
 .card2 {
-    margin-top: -60px;
+    margin-top: -6rem
 }
-.card2 a{
+
+.card2 a {
     background-image: url(../img/card-bg-2.png);
 }
-.card3 a{
+
+.card3 a {
     background-image: url(../img/card-bg-3.png);
 }
+
 .card-t-wrap .txt1 {
-    font-size: 16px;
+    font-size: 1.6rem;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -.01rem;
 }
+
 .card-t-wrap h4 {
-    margin: 7px 0 14px;
+    margin: .7rem 0 1.4rem;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
 }
-.arr_wrap{
+
+.arr_wrap {
     text-align: right;
 }

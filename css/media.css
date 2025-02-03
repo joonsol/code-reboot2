@@ -1,0 +1,92 @@
+@media screen and (max-width:1800px) {
+    .hero .img_wrap {
+        transform: translateX(-5rem);
+        width: auto;
+    }
+
+    .nav_btn {
+        margin-left: 5rem;
+    }
+
+    .tit_wrap h2 {
+        font-size: 7rem;
+        letter-spacing: -.25rem;
+    }
+
+    .tit_wrap p {
+        display: none;
+    }
+
+    .hero_btn {
+        padding: 0.8rem 2rem;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .card {
+        width: 21.4rem;
+        height: 32.8rem
+    }
+
+    .card a {
+        padding: 0 2rem 4rem;
+    }
+
+    .card-t-wrap .txt1 {
+        font-size: 1.2rem;
+    }
+
+    .card-t-wrap h4 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin: .5rem 0 1rem;
+    }
+}
+
+@media screen and (max-width:1600px) {
+
+    header .rel,
+    .rel {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav_list {
+        display: none;
+    }
+
+    .hero .rel {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .hero .img_wrap {
+        transform: translateX(0);
+    }
+
+    .hero .tit_wrap {
+        order: 1;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:860px) {
+    header .rel {
+        padding-top: 1.5rem;
+    }
+
+    header .rel,
+    .rel {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .card1,
+    .card2 {
+        display: none;
+    }
+}
